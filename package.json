@@ -1,0 +1,21 @@
+{
+  "name": "sendgrid-stream",
+  "description": "sends an email on each data event received",
+  "version": "0.0.0",
+  "repository": {
+    "url": "git://github.com/jcrugzz/sendgrid-stream.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "engines": {
+    "node": "0.10.x || 0.8.x"
+  },
+  "dependencies": {
+    "sendgrid-web": "0.0.4"
+  },
+  "devDependencies": {
+    "tape": "~1.0.2"
+  }
+}
