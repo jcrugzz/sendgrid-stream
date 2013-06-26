@@ -31,6 +31,8 @@ SendgridStream.prototype._write = function(chunk, encoding, done) {
     if (err) { return self.emit(err) }
   });
 
+  this.push(chunk);
+
   done();
 };
 
