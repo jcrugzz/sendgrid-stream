@@ -4,6 +4,9 @@ var TransformStream = require('stream').Transform;
 var sendgrid = require('sendgrid-web');
 
 var SendgridStream = function (options) {
+  if (!options || !options.auth || !options.to) {
+    throw new Error('options.auth and options.to are required')
+  }
   TransformStream.call(this, { objectMode: true, decodeStrings: false });
 
   this.email = new sendgrid(options.auth);
@@ -40,4 +43,6 @@ SendgridStream.prototype._read = function (size) {};
 
 module.exports = function(options) {
   return new SendgridStream(options);
-}
+};
+
+module.exports.SendrigdStream = SendgridStream;
