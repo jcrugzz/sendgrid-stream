@@ -1,7 +1,7 @@
 {
   "name": "sendgrid-stream",
   "description": "sends an email on each data event received",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "repository": {
     "url": "git://github.com/jcrugzz/sendgrid-stream.git"
   },
