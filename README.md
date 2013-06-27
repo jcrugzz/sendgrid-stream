@@ -58,5 +58,8 @@ stream.write(data);
 npm test
 ```
 
+## license
+MIT
+
 [transform]: http://nodejs.org/api/stream.html#stream_class_stream_transform
 [sendgrid]: https://github.com/jesusabdullah/node-sendgrid-web
